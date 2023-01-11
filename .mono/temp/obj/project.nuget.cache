@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "iY/A6U3x7hfPUpSm41EzfSPlkAbfE6tP866nJ0/IrWaLFNw3DNURelWMm/kdOg3JN2sxFU9wu9bFbpOeTLgkzg==",
+  "success": true,
+  "projectFilePath": "D:\\Files\\Programming\\Godot\\Projects\\GameOfLife\\GameOfLife.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tsuto\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "C:\\Users\\tsuto\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.2\\microsoft.netframework.referenceassemblies.net472.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

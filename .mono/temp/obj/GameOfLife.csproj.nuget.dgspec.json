@@ -1,0 +1,50 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Files\\Programming\\Godot\\Projects\\GameOfLife\\GameOfLife.csproj": {}
+  },
+  "projects": {
+    "D:\\Files\\Programming\\Godot\\Projects\\GameOfLife\\GameOfLife.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Files\\Programming\\Godot\\Projects\\GameOfLife\\GameOfLife.csproj",
+        "projectName": "GameOfLife",
+        "projectPath": "D:\\Files\\Programming\\Godot\\Projects\\GameOfLife\\GameOfLife.csproj",
+        "packagesPath": "C:\\Users\\tsuto\\.nuget\\packages\\",
+        "outputPath": "D:\\Files\\Programming\\Godot\\Projects\\GameOfLife\\.mono\\temp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tsuto\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.2, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

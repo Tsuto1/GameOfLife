@@ -1,0 +1,9 @@
+D:\Files\Programming\Godot\Projects\GameOfLife\.mono\temp\obj\Debug\GameOfLife.csproj.AssemblyReference.cache
+D:\Files\Programming\Godot\Projects\GameOfLife\.mono\temp\obj\Debug\GameOfLife.GeneratedMSBuildEditorConfig.editorconfig
+D:\Files\Programming\Godot\Projects\GameOfLife\.mono\temp\obj\Debug\GameOfLife.AssemblyInfoInputs.cache
+D:\Files\Programming\Godot\Projects\GameOfLife\.mono\temp\obj\Debug\GameOfLife.AssemblyInfo.cs
+D:\Files\Programming\Godot\Projects\GameOfLife\.mono\temp\obj\Debug\GameOfLife.csproj.CoreCompileInputs.cache
+D:\Files\Programming\Godot\Projects\GameOfLife\.mono\temp\bin\Debug\GameOfLife.dll
+D:\Files\Programming\Godot\Projects\GameOfLife\.mono\temp\bin\Debug\GameOfLife.pdb
+D:\Files\Programming\Godot\Projects\GameOfLife\.mono\temp\obj\Debug\GameOfLife.dll
+D:\Files\Programming\Godot\Projects\GameOfLife\.mono\temp\obj\Debug\GameOfLife.pdb

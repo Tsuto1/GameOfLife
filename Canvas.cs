@@ -8,20 +8,35 @@ public class Canvas : TileMap
 	// private int a = 2;
 	// private string b = "text";
 	
-	[Export]
-	public bool running = false;
+	private TextureButton PlayPauseTool;
+	private HSlider SpeedSlider;
 	
 	private float totalDelta = 0;
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		
+		PlayPauseTool = GetNode<TextureButton>("/root/Root/CanvasLayer/PlayPauseTool");
+		SpeedSlider = GetNode<HSlider>("/root/Root/CanvasLayer/SpeedSlider");
+	}
+	
+	public override void _Input(InputEvent @event)
+	{
+//		// Mouse in viewport coordinates.
+//		if (@event is InputEventMouseButton eventMouseButton)
+//			GD.Print("Mouse Click/Unclick at: ", eventMouseButton.Position);
+//		else if (@event is InputEventMouseMotion eventMouseMotion)
+//			GD.Print("Mouse Motion at: ", eventMouseMotion.Position);
+//
+//		// Print the size of the viewport.
+//		GD.Print("Viewport Resolution is: ", GetViewportRect().Size);
 	}
 	
 	public override void _PhysicsProcess(float delta) {
+		if (!PlayPauseTool.Pressed) return;
+		
 		totalDelta += delta;
-		if (totalDelta >= 0.2f){
+		if (totalDelta >= (3 - SpeedSlider.Value)){
 			Step(delta);
 			totalDelta = 0;
 		}

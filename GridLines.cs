@@ -26,18 +26,26 @@ public class GridLines : Node2D
 	public override void _Draw() {
 		if (!showGrid) return;
 		
-		for (int y = 0; y < tilemapRect.Size.y; y++) {
+		for (float y = tilemapRect.Position.y * tilemapCellSize.y;
+			y < (tilemapRect.Size.y + tilemapRect.Position.y) * tilemapCellSize.y;
+			y += tilemapCellSize.y) {
+			
 			DrawLine(
-				new Vector2( 0, y * tilemapCellSize.y ),
-				new Vector2( tilemapRect.Size.x * tilemapCellSize.x, y * tilemapCellSize.y ),
-				color );
+				new Vector2(tilemapRect.Position.x * tilemapCellSize.x, y),
+				new Vector2((tilemapRect.Position.x + tilemapRect.Size.x) * tilemapCellSize.x, y),
+				color
+			);
 		}
 		
-		for (int x = 0; x < tilemapRect.Size.x; x++) {
+		for (float x = tilemapRect.Position.x * tilemapCellSize.x;
+			x < (tilemapRect.Size.x + tilemapRect.Position.x) * tilemapCellSize.x;
+			x += tilemapCellSize.x) {
+			
 			DrawLine(
-				new Vector2( x * tilemapCellSize.x, 0 ),
-				new Vector2( x * tilemapCellSize.x, tilemapRect.Size.y * tilemapCellSize.y ),
-				color );
+				new Vector2(x, tilemapRect.Position.y * tilemapCellSize.y),
+				new Vector2(x, (tilemapRect.Position.y + tilemapRect.Size.y) * tilemapCellSize.y),
+				color
+			);
 		}
 	}
 	

@@ -21,7 +21,7 @@ public class GridLines : Node2D
 	public override void _Draw() {
 		if (!showGrid) return;
 		
-		// 
+		// Draw horizontal lines
 		for (float y = tilemapRect.Position.y * tilemapCellSize.y;
 			y < (tilemapRect.Size.y + tilemapRect.Position.y) * tilemapCellSize.y;
 			y += tilemapCellSize.y) {
@@ -33,6 +33,7 @@ public class GridLines : Node2D
 			);
 		}
 		
+		// Draw vertical lines
 		for (float x = tilemapRect.Position.x * tilemapCellSize.x;
 			x < (tilemapRect.Size.x + tilemapRect.Position.x) * tilemapCellSize.x;
 			x += tilemapCellSize.x) {

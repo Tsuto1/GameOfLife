@@ -25,6 +25,7 @@ I made a simulator for this cellular automata in Monogame C# when I was around 1
 
 
 **Shortcuts:**
+
 • R - Reset camera's position and zoom level
 
 • C - Clear the canvas of live cells and tracer cells

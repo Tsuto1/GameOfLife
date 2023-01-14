@@ -66,14 +66,17 @@ public class Canvas : TileMap
 			}
 		}
 		
+		// Reset the zoom level and position. Key: R
 		if (Input.GetActionStrength("ui_reset_zoom") == 1) {
 			_Camera2D.Zoom = new Vector2(1, 1);
 			_Camera2D.Position = new Vector2(0, 0);
 		}
+		// Clear the map to a blank slate. Key: C
 		if (Input.GetActionStrength("ui_clear_map") == 1) {
 			foreach (Vector2 cell in GetUsedCells())
 				SetCellv(cell, 1);
 		}
+		// Toggle the play/pause button from the keyboard. Key: Space
 		if (Input.GetActionStrength("ui_play_pause") == 1) {
 			PlayPauseTool.Pressed = !PlayPauseTool.Pressed;
 		}
@@ -89,6 +92,11 @@ public class Canvas : TileMap
 		}
 	}
 	
+	/// <summary>
+	/// Counts the number of live cells around a given @cell's position.
+	/// </summary>
+	/// <param name="cell">The selected cell's position.</param>
+	/// <returns>The number of live neighbors for the given @cell.</returns>
 	private int CountNeighbors(Vector2 cell) {
 		int count = 0;
 			
@@ -102,6 +110,10 @@ public class Canvas : TileMap
 		return count;
 	}
 	
+	/// <summary>
+	/// Loops through all cells on the canvas and calculates the next step in the game of life.
+	/// </summary>
+	/// <param name="delta">Time passed since last frame. This is provided by _PhysicsProcess</param>
 	private void Step(float delta) {
 		Dictionary<Vector2, int> changes = new Dictionary<Vector2, int>();
 		foreach (Vector2 cell in GetUsedCells()) {
@@ -123,9 +135,11 @@ public class Canvas : TileMap
 		}
 	}
 	
-	/** mouseOut events
-		each control has its own separate mouse_entered and mouse_exited events, 
-		thus each control on the board ought to be checked**/
+	/// <summary>
+	/// mouseOut events
+	/// each control has its own separate mouse_entered and mouse_exited events, 
+	/// thus each control on the board ought to be checked
+	/// </summary>
 	private void _on_Board_mouse_entered() {
 		mouseOut = true;
 	}
